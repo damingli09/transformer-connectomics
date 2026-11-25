@@ -1,0 +1,9 @@
+torch>=2.1
+transformer-lens>=2.0
+numpy>=1.26
+scikit-learn>=1.4
+networkx>=3.2
+python-louvain>=0.16
+matplotlib>=3.8
+tqdm>=4.66
+datasets>=2.18

@@ -1,0 +1,62 @@
+{
+  "model": "meta-llama/Llama-3.1-8B",
+  "n_layers": 32,
+  "n_heads_query": 32,
+  "n_heads_kv": 8,
+  "gqa_group_size": 4,
+  "n_perm": 10000,
+  "alpha_bonferroni": 0.01,
+  "H1_gqa_structural_cosine": {
+    "sc_q": {
+      "within_group_mean_cosine": 0.9810359477996826,
+      "between_group_mean_cosine": 0.9575292468070984,
+      "delta_obs": 0.02350670099258423,
+      "null_mean_delta": 2.1133512258529664e-05,
+      "null_std_delta": 0.0007429190453390674,
+      "p_one_sided": 9.999000099990002e-05
+    },
+    "sc_k": {
+      "within_group_mean_cosine": 0.9972327351570129,
+      "between_group_mean_cosine": 0.9581627249717712,
+      "delta_obs": 0.0390700101852417,
+      "null_mean_delta": -1.1745405197143555e-05,
+      "null_std_delta": 0.0007845140340744146,
+      "p_one_sided": 9.999000099990002e-05
+    },
+    "sc_v": {
+      "within_group_mean_cosine": 0.9952734708786011,
+      "between_group_mean_cosine": 0.9424934983253479,
+      "delta_obs": 0.052779972553253174,
+      "null_mean_delta": -1.0792672634124756e-05,
+      "null_std_delta": 0.0007852978980454022,
+      "p_one_sided": 9.999000099990002e-05
+    }
+  },
+  "H2_within_group_fc_magnitude": {
+    "within_group_mean_abs_fc": 0.360025018453598,
+    "between_group_mean_abs_fc": 0.1763417273759842,
+    "delta_obs": 0.18368329107761383,
+    "null_mean_delta": 2.4468643963336943e-05,
+    "null_std_delta": 0.003433809049579731,
+    "p_one_sided": 9.999000099990002e-05
+  },
+  "H3_louvain_group_purity": {
+    "observed_group_purity": 0.794921875,
+    "null_mean_purity": 0.685111328125,
+    "null_std_purity": 0.006663115305440427,
+    "p_one_sided": 9.999000099990002e-05
+  },
+  "sc_fc_coupling_partial": {
+    "global": 0.07518036100940616,
+    "early": 0.17274737652808309,
+    "middle": 0.10358430566700326,
+    "late": 0.010561343222447254
+  },
+  "verdicts_bonferroni": {
+    "H1_sc_q": true,
+    "H1_sc_k": true,
+    "H1_sc_v": true,
+    "H2": true,
+    "H3": true
+  }
+}

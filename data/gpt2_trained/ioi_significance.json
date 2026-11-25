@@ -1,0 +1,37 @@
+{
+  "test": "within-label permutation null (IOI class labels shuffled among labeled heads, partition fixed)",
+  "n_perm": 10000,
+  "seed": 0,
+  "n_labeled_heads": 27,
+  "n_classes": 7,
+  "measures": {
+    "l2": {
+      "ioi_nmi": {
+        "observed": 0.4090079106637812,
+        "null_mean": 0.1637503137253251,
+        "null_std": 0.058795058365654886,
+        "p_one_sided": 0.00029997000299970003
+      },
+      "ioi_purity": {
+        "observed": 0.8518518518518519,
+        "null_mean": 0.6646703703703704,
+        "null_std": 0.05652724060168825,
+        "p_one_sided": 0.0030996900309969004
+      }
+    },
+    "partial": {
+      "ioi_nmi": {
+        "observed": 0.37187547915983776,
+        "null_mean": 0.1810190227048377,
+        "null_std": 0.05831921828939083,
+        "p_one_sided": 0.0022997700229977
+      },
+      "ioi_purity": {
+        "observed": 0.8148148148148148,
+        "null_mean": 0.6473444444444445,
+        "null_std": 0.054490143456243804,
+        "p_one_sided": 0.005699430056994301
+      }
+    }
+  }
+}
