@@ -1,0 +1,1 @@
+Code repository for the paper "Transformer Connectomics: Structural and Functional Connectivity as a Network-Level Lens on Attention Heads" accepted to EACL 2027 and to appear late February/early March.
